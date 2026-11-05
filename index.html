@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+            <a href="index.html" class="cabecalho_titulo">
+                ✦ Conecta<strong class="fonte-destaque">Jovem</strong>
+            </a>
+            <button type="button" class="cabecalho__burguer" id="burguer" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu">
+                <img src="assetsProva05-11/icones/menu.svg" alt="">
+            </button>
+            <nav class="cabecalho__menu" aria-label="Navegação principal">
+                <ul class="cabecalho__menu__lista" id="menu">
+                    <li>
+                        <a href="index.html" class="cabecalho_menu__lista_link atual" aria-current="page">
+                            <img class="icone" src="assetsProva05-11/icones/home.svg" alt="">
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="galeria.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/grid.svg" alt="">
+                            <span>Galeria</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/info.svg" alt="">
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <section class="destaque">
+            <div class="destaque__texto">
+                <p class="selo">SEU ESPAÇO, SUAS IDEIAS</p>
+                <h1>
+                    Explore o que move a
+                    <strong class="fonte-destaque">nossa geração.</strong>
+                </h1>
+                <p class="texto">
+                    Música, jogos, arte e ciência em um só lugar.
+                    Descubra histórias e navegue por nossa galeria interativa.
+                </p>
+                <a href="galeria.html" class="botao">
+                    Explorar galeria →
+                </a>
+            </div>
+            <img class="destaque__imagem" src="assetsProva05-11/imagens/foto05.jpg" alt="Tecnologia Criativa">
+        </section>
+
+        <h3 class="cartoes__titulo">O que você encontra aqui?</h3>
+        <section class="cartoes">
+            <div class="cartao">
+                <p class="cartao__titulo">Cultura Pop</p>
+                <p class="cartao__texto">
+                    Jogos, música, cinema e tendências.
+                </p>
+            </div>
+            <div class="cartao">
+                <p class="cartao__titulo">Criatividade</p>
+                <p class="cartao__texto">
+                    Arte, fotografia e novas ideias.
+                </p>
+            </div>
+            <div class="cartao">
+                <p class="cartao__titulo">Descobertas</p>
+                <p class="cartao__texto">
+                    Tecnologia, ciência e natureza.
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido pelos alunos Felipe Merlin e Rafaela Blasque do curso de Desenvolvimento de Sistemas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

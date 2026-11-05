@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+            <a href="index.html" class="cabecalho_titulo">
+                ✦ Conecta<strong class="fonte-destaque">Jovem</strong>
+            </a>
+            <button type="button" class="cabecalho__burguer" id="burguer" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu">
+                <img src="assetsProva05-11/icones/menu.svg" alt="">
+            </button>
+            <nav class="cabecalho__menu" aria-label="Navegação principal">
+                <ul class="cabecalho__menu__lista" id="menu">
+                    <li>
+                        <a href="index.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/home.svg" alt="">
+                            <span>Início</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="galeria.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/grid.svg" alt="">
+                            <span>Galeria</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="cabecalho_menu__lista_link atual" aria-current="page">
+                            <img class="icone" src="assetsProva05-11/icones/info.svg" alt="">
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="conteudo">
+        <p class="selo">SOBRE O PROJETO</p>
+        <h1>Ideias que conectam</h1>
+        <p class="texto">
+            O ConectaJovem é uma plataforma criada para jovens de 15 e 16 anos
+            interessados em cultura, criatividade e descobertas.
+            Aqui você explora temas do dia a dia e compartilha novas ideias.
+        </p>
+        <section class="cartoes">
+            <div class="cartao">
+                <p class="cartao__titulo">Missão</p>
+                <p class="cartao__texto">
+                    Valorizar os interesses dos jovens e estimular a curiosidade.
+                </p>
+            </div>
+            <div class="cartao">
+                <p class="cartao__titulo">Tecnologias</p>
+                <p class="cartao__texto">
+                    HTML para a estrutura, CSS para o visual e JavaScript para as interações.
+                </p>
+            </div>
+            <div class="cartao">
+                <p class="cartao__titulo">Recursos</p>
+                <p class="cartao__texto">
+                    Menu responsivo, filtros, mosaico de imagens e modal com navegação.
+                </p>
+            </div>
+        </section>
+        <a href="galeria.html" class="botao">Ver galeria</a>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido pelos alunos Felipe Merlin e Rafaela Blasque do curso de Desenvolvimento de Sistemas</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

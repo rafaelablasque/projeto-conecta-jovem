@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="cabecalho__conteudo">
+
+            <a href="index.html" class="cabecalho_titulo">
+                ✦ Conecta<strong class="fonte-destaque">Jovem</strong>
+            </a>
+
+            <button type="button" class="cabecalho__burguer" id="burguer" aria-label="Abrir menu" aria-expanded="false"
+                aria-controls="menu">
+                <img src="assetsProva05-11/icones/menu.svg" alt="">
+            </button>
+
+            <nav class="cabecalho__menu" aria-label="Navegação principal">
+                <ul class="cabecalho__menu__lista" id="menu">
+
+                    <li>
+                        <a href="index.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/home.svg" alt="">
+                            <span>Início</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="galeria.html" class="cabecalho_menu__lista_link atual" aria-current="page">
+                            <img class="icone" src="assetsProva05-11/icones/grid.svg" alt="">
+                            <span>Galeria</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="sobre.html" class="cabecalho_menu__lista_link">
+                            <img class="icone" src="assetsProva05-11/icones/info.svg" alt="">
+                            <span>Sobre</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <p class="selo">EXPLORE E DESCUBRA</p>
+
+        <h1>Galeria de experiências</h1>
+
+        <p class="texto">
+            Clique em qualquer imagem para ampliá-la e ver mais detalhes.
+        </p>
+
+        <div class="filtros">
+            <button type="button" class="filtros__botao ativo" data-filtro="Todas">
+                Todas
+            </button>
+            <button type="button" class="filtros__botao" data-filtro="Cultura">
+                Cultura
+            </button>
+            <button type="button" class="filtros__botao" data-filtro="Criatividade">
+                Criatividade
+            </button>
+            <button type="button" class="filtros__botao" data-filtro="Descobertas">
+                Descobertas
+            </button>
+        </div>
+
+        <p class="contador texto-auxiliar" id="contador" aria-live="polite">
+            9 de 9 imagens exibidas
+        </p>
+
+        <section class="galeria" id="galeria">
+
+            <img src="assetsProva05-11/imagens/foto01.jpg" alt="Festival de Música" class="miniatura miniatura-destaque"
+                tabindex="0" role="button" data-categoria="Cultura" data-titulo="Festival de Música"
+                data-descricao="Shows, festivais e playlists que embalam a nossa geração.">
+
+            <img src="assetsProva05-11/imagens/foto02.jpg" alt="Universo Gamer" class="miniatura" tabindex="0"
+                role="button" data-categoria="Cultura" data-titulo="Universo Gamer"
+                data-descricao="Jogos eletrônicos como diversão, estratégia e encontro entre amigos.">
+
+            <img src="assetsProva05-11/imagens/foto03.jpg" alt="Arte Urbana" class="miniatura miniatura-vertical"
+                tabindex="0" role="button" data-categoria="Criatividade" data-titulo="Arte Urbana"
+                data-descricao="Grafites e murais que transformam a cidade em uma galeria a céu aberto.">
+
+            <img src="assetsProva05-11/imagens/foto04.jpg" alt="Esportes em Movimento" class="miniatura" tabindex="0"
+                role="button" data-categoria="Descobertas" data-titulo="Esportes em Movimento"
+                data-descricao="Energia, superação e trabalho em equipe no esporte.">
+
+            <img src="assetsProva05-11/imagens/foto05.jpg" alt="Tecnologia Criativa"
+                class="miniatura miniatura-horizontal" tabindex="0" role="button" data-categoria="Criatividade"
+                data-titulo="Tecnologia Criativa"
+                data-descricao="Programar é transformar ideias em soluções para o mundo.">
+
+            <img src="assetsProva05-11/imagens/foto06.jpg" alt="Cinema e Histórias" class="miniatura" tabindex="0"
+                role="button" data-categoria="Cultura" data-titulo="Cinema e Histórias"
+                data-descricao="Filmes e séries que contam histórias e criam referências.">
+
+            <img src="assetsProva05-11/imagens/foto07.jpg" alt="Natureza e Aventura" class="miniatura" tabindex="0"
+                role="button" data-categoria="Descobertas" data-titulo="Natureza e Aventura"
+                data-descricao="Trilhas e paisagens que convidam a explorar o mundo.">
+
+            <img src="assetsProva05-11/imagens/foto08.jpg" alt="Fotografia Jovem" class="miniatura miniatura-horizontal"
+                tabindex="0" role="button" data-categoria="Criatividade" data-titulo="Fotografia Jovem"
+                data-descricao="Um olhar próprio sobre o cotidiano através da câmera.">
+
+            <img src="assetsProva05-11/imagens/foto09.jpg" alt="Ciência no Dia a Dia"
+                class="miniatura miniatura-horizontal" tabindex="0" role="button" data-categoria="Descobertas"
+                data-titulo="Ciência no Dia a Dia"
+                data-descricao="A ciência explica e inspira o que vivemos todos os dias.">
+
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Desenvolvido pelos alunos Felipe Merlin e Rafaela Blasque do curso de Desenvolvimento de Sistemas</p>
+    </footer>
+
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-titulo" aria-hidden="true">
+
+        <div class="modal__caixa">
+
+            <img class="modal__imagem" id="modal-imagem" src="" alt="">
+
+            <button type="button" class="modal__fechar" id="fechar" aria-label="Fechar">
+                <img class="icone" src="assetsProva05-11/icones/close.svg" alt="">
+            </button>
+
+            <div class="modal__texto">
+
+                <h2 id="modal-titulo"></h2>
+
+                <p class="modal__descricao" id="modal-descricao"></p>
+
+                <div class="modal__botoes">
+
+                    <button type="button" class="botao" id="anterior" aria-label="Foto anterior">
+                        <img class="icone" src="assetsProva05-11/icones/left.svg" alt="">
+                        Anterior
+                    </button>
+
+                    <span id="modal-posicao"></span>
+
+                    <button type="button" class="botao" id="proxima" aria-label="Próxima foto">
+                        Próxima
+                        <img class="icone" src="assetsProva05-11/icones/right.svg" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
